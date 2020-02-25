@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/CGCV-Group2/Lab3-Breakout/Scenes/Main.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

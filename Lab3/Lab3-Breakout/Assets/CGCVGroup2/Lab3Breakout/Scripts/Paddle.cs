@@ -31,13 +31,13 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
             {
                 float horizontalInput = Input.GetAxis("Horizontal");
                 transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
-                transform.position = new Vector3(Mathf.Clamp(transform.position.x, left, right), 0, 0);
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, left, right), 0.55f, 0f);
             }
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 float horizontalInput = Input.GetAxis("Horizontal");
                 transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
-                transform.position = new Vector3(Mathf.Clamp(transform.position.x, left, right), 0, 0);
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, left, right), 0.55f, 0f);
             }
         }
     }

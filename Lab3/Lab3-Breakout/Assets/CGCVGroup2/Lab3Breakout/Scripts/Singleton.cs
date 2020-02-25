@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace umu7.BlockKuzushi3D.Scripts
+namespace CGCVGroup2.Lab3Breakout.Scripts
 {
     public abstract class Singleton<T> : MonoBehaviour where T : Component
     {

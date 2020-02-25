@@ -15,7 +15,6 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
             _rigidBody = GetComponent<Rigidbody>();
             _rigidBody.isKinematic = true;
             _rigidBody.useGravity = false;
-
         }
 
         private void Reset()

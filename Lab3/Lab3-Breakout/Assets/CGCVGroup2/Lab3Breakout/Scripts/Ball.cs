@@ -19,9 +19,14 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
 
         private void OnCollisionEnter(Collision other)
         {
-
-
-            //throw new NotImplementedException();
+            if (other.gameObject.name == "Bricks")
+			{
+                GameManager.instance.CollideBrick(other);
+            }
+            if (other.gameObject.name == "Water")
+            {
+                GameManager.instance.CollideWater();
+            }
         }
 
         // set default value of the speed variable

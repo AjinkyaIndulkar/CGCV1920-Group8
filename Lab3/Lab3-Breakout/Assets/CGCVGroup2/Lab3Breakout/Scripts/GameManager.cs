@@ -18,6 +18,8 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
         [SerializeField] private TextMeshProUGUI score;
         [SerializeField] private float time;
 
+        public static GameManager instance = null;
+
         public void CollideBrick(Collision other)
         {
             if (_GameIsOver) return;
@@ -30,25 +32,8 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
             winScreen.gameObject.SetActive(true);
             Invoke(nameof(Restart), time);
         }
-        // Start is called before the first frame update
-        void Start()
-        {
-            _BrickCount = 32;
-            _LifeCount = 5;
-            loseScreen = null;
-            winScreen = null;
-            _Score = 0;
-            time = 5;
-            throw new DivideByZeroException();
-        }
 
-        // Update is called once per frame
-        void Update()
-        {
-            throw new NotImplementedException();
-        }
-
-        void CollideWater()
+        public void CollideWater()
         {
             if (_GameIsOver) return;
             _LifeCount--;
@@ -61,18 +46,36 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
             Invoke(nameof(Restart), time);
         }
 
-        void Restart()
+        private void Restart()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        void Reset()
+        private void Reset()
         {
             bricks = null;
             lives = null;
             loseScreen = null;
             score = null;
             time = 5;
+        }
+
+        // Start is called before the first frame update
+        private void Start()
+        {
+            _BrickCount = 32;
+            _LifeCount = 5;
+            loseScreen = null;
+            winScreen = null;
+            _Score = 0;
+            time = 5;
+            throw new DivideByZeroException();
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+            throw new NotImplementedException();
         }
     }
 

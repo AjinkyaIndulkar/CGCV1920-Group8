@@ -15,6 +15,7 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
             _rigidBody = GetComponent<Rigidbody>();
             _rigidBody.isKinematic = true;
             _rigidBody.useGravity = false;
+
         }
 
         private void Reset()
@@ -26,9 +27,18 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
 
         private void Update()
         {
-            Vector3 moveDir = Vector3.zero;
-            moveDir.x = Input.GetAxis("Horizontal");
-            transform.position += moveDir * speed * Time.deltaTime;   
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                float horizontalInput = Input.GetAxis("Horizontal");
+                transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, left, right), 0, 0);
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                float horizontalInput = Input.GetAxis("Horizontal");
+                transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, left, right), 0, 0);
+            }
         }
     }
 }

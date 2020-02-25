@@ -39,13 +39,35 @@ namespace CGCVGroup2.Lab3Breakout.Scripts
             winScreen = null;
             _Score = 0;
             time = 5;
-            throw new DivideByZeroException();
+            Time.timeScale = 0; 
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            throw new NotImplementedException();
+            if (_GameIsOver == true)
+            {
+
+            }
+            else
+            {
+                if (Input.GetKey("r"))
+                {
+                    print("restarting mr.game");
+                    Restart();
+                }
+
+                if (Input.GetKey(KeyCode.Escape))
+                {
+                    print("ESCAPE");
+                    while ((Input.GetKey(KeyCode.Return)) == false)
+                    {
+                        print("x");
+                    }
+                    print("DE_ESCAPE");
+                }
+            }
+
         }
 
         void CollideWater()

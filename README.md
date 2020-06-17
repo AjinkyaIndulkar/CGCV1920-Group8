@@ -3,25 +3,31 @@ Group 8 Repository for the "Computer Graphics and Computer Vision 1920" Course
 
 ## Description
 
-**Lab 1**: Introduction to Unity (Microgames)
+- [x] **Lab 1**: Introduction to Unity (Microgames)
 
-**Lab 2**: Introduction to C# Part 1 (Action RPG)
+- [x] **Lab 2**: Introduction to C# Part 1 (Action RPG)
 
-**Lab 3**: Introduction to C# Part 2 (Breakout)
+- [x] **Lab 3**: Introduction to C# Part 2 (Breakout)
 
-**Lab 4**: Introduction to Shaders
+- [x] **Lab 4**: Introduction to Shaders
 
-**Lab 5**: Introduction to Fragment and Vertex Shaders
+- [x] **Lab 5**: Introduction to Fragment and Vertex Shaders
 
-**Lab 6**: Introduction to Compute Shaders
+- [x] **Lab 6**: Introduction to Compute Shaders
 
-**Lab 7-8**: Introduction to Landscape Generation
+- [x] **Lab 7-8**: Introduction to Landscape Generation
 
-**Lab 9-10**: Introduction to Maze Generation and Maze Features
+- [x] **Lab 9-10**: Introduction to Maze Generation and Maze Features
+
+- [x] **Lab 11-12**: Generative Modelling and Deep Learning
+
+- [ ] **Lab 13**: Variational Auto Encoders
+
+- [ ] **Lab 14**: Generative Adversarial Networks
 
 ### Collaborators
-Chris Beem
+Ajinkya Indulkar [@AjinkyaIndulkar](https://github.com/AjinkyaIndulkar)
 
-Nolan Cardozo
+Chris Beem [@beemc](https://github.com/beemc)
 
-Ajinkya Indulkar
+Nolan Cardozo [@nolancardozo13](https://github.com/nolancardozo13)

@@ -1,5 +1,7 @@
-.vs/
+*/.DS_Store
 .DS_Store
-.DS_Store
-Lab 13/.ipynb_checkpoints/Group8_CGCV192013B-checkpoint.ipynb
+Lab 13/lfw-deepfunneled.tgz
+Lab 13/lfw_dataset
 Lab 14/lfw-deepfunneled.tgz
+Lab 14/lfw_dataset
+*/.ipynb_checkpoints

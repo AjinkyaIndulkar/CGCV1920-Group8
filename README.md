@@ -21,9 +21,9 @@ Group 8 Repository for the "Computer Graphics and Computer Vision 1920" Course
 
 - [x] **Lab 11-12**: Generative Modelling and Deep Learning
 
-- [ ] **Lab 13**: Variational Auto Encoders
+- [x] **Lab 13**: Variational Auto Encoders
 
-- [ ] **Lab 14**: Generative Adversarial Networks
+- [x] **Lab 14**: Generative Adversarial Networks
 
 ### Collaborators
 Ajinkya Indulkar [@AjinkyaIndulkar](https://github.com/AjinkyaIndulkar)
